@@ -1,0 +1,288 @@
+Start iterating...
+Time-step 5/439945 reached. Elasped time:     5.0000 seconds; L2norm = 2.9372e-02; KLdistance = 3.4361e+00.
+Time-step 10/439945 reached. Elasped time:     8.8000 seconds; L2norm = 2.9291e-02; KLdistance = 3.4311e+00.
+Save pdf to compare at iteration 15
+Time-step 15/439945 reached. Elasped time:    10.2400 seconds; L2norm = 2.9212e-02; KLdistance = 3.4262e+00.
+Time-step 20/439945 reached. Elasped time:    11.3400 seconds; L2norm = 2.9135e-02; KLdistance = 3.4214e+00.
+Time-step 25/439945 reached. Elasped time:    12.4100 seconds; L2norm = 2.9060e-02; KLdistance = 3.4166e+00.
+Time-step 30/439945 reached. Elasped time:    13.5600 seconds; L2norm = 2.8986e-02; KLdistance = 3.4120e+00.
+Save pdf to compare at iteration 35
+Time-step 35/439945 reached. Elasped time:    14.4300 seconds; L2norm = 2.8913e-02; KLdistance = 3.4074e+00.
+Time-step 40/439945 reached. Elasped time:    15.3500 seconds; L2norm = 2.8842e-02; KLdistance = 3.4028e+00.
+Time-step 45/439945 reached. Elasped time:    16.2900 seconds; L2norm = 2.8772e-02; KLdistance = 3.3984e+00.
+Time-step 50/439945 reached. Elasped time:    17.3400 seconds; L2norm = 2.8703e-02; KLdistance = 3.3940e+00.
+Time-step 55/439945 reached. Elasped time:    18.3600 seconds; L2norm = 2.8635e-02; KLdistance = 3.3896e+00.
+Save pdf to compare at iteration 60
+Time-step 60/439945 reached. Elasped time:    19.4700 seconds; L2norm = 2.8568e-02; KLdistance = 3.3853e+00.
+Time-step 65/439945 reached. Elasped time:    20.8700 seconds; L2norm = 2.8502e-02; KLdistance = 3.3810e+00.
+Time-step 70/439945 reached. Elasped time:    22.0000 seconds; L2norm = 2.8437e-02; KLdistance = 3.3768e+00.
+Time-step 75/439945 reached. Elasped time:    23.1900 seconds; L2norm = 2.8373e-02; KLdistance = 3.3726e+00.
+Time-step 80/439945 reached. Elasped time:    24.4000 seconds; L2norm = 2.8309e-02; KLdistance = 3.3685e+00.
+Time-step 85/439945 reached. Elasped time:    25.6700 seconds; L2norm = 2.8247e-02; KLdistance = 3.3644e+00.
+Save pdf to compare at iteration 90
+Time-step 90/439945 reached. Elasped time:    27.1800 seconds; L2norm = 2.8185e-02; KLdistance = 3.3604e+00.
+Time-step 95/439945 reached. Elasped time:    28.5900 seconds; L2norm = 2.8124e-02; KLdistance = 3.3564e+00.
+Time-step 100/439945 reached. Elasped time:    29.9900 seconds; L2norm = 2.8064e-02; KLdistance = 3.3524e+00.
+Save pdf to compare at iteration 135
+Time-step 135/439945 reached. Elasped time:    31.5200 seconds; L2norm = 2.7661e-02; KLdistance = 3.3255e+00.
+Save pdf to compare at iteration 185
+Time-step 185/439945 reached. Elasped time:    33.2200 seconds; L2norm = 2.7135e-02; KLdistance = 3.2897e+00.
+Time-step 200/439945 reached. Elasped time:    34.7500 seconds; L2norm = 2.6987e-02; KLdistance = 3.2794e+00.
+Save pdf to compare at iteration 255
+Time-step 255/439945 reached. Elasped time:    36.5200 seconds; L2norm = 2.6477e-02; KLdistance = 3.2437e+00.
+Time-step 300/439945 reached. Elasped time:    38.1700 seconds; L2norm = 2.6094e-02; KLdistance = 3.2162e+00.
+Save pdf to compare at iteration 345
+Time-step 345/439945 reached. Elasped time:    40.2600 seconds; L2norm = 2.5737e-02; KLdistance = 3.1903e+00.
+Time-step 400/439945 reached. Elasped time:    42.0100 seconds; L2norm = 2.5331e-02; KLdistance = 3.1603e+00.
+Save pdf to compare at iteration 465
+Time-step 465/439945 reached. Elasped time:    43.8400 seconds; L2norm = 2.4890e-02; KLdistance = 3.1271e+00.
+Time-step 500/439945 reached. Elasped time:    45.6400 seconds; L2norm = 2.4667e-02; KLdistance = 3.1101e+00.
+Time-step 600/439945 reached. Elasped time:    47.8300 seconds; L2norm = 2.4080e-02; KLdistance = 3.0644e+00.
+Save pdf to compare at iteration 615
+Time-step 615/439945 reached. Elasped time:    49.6900 seconds; L2norm = 2.3998e-02; KLdistance = 3.0579e+00.
+Time-step 700/439945 reached. Elasped time:    51.7400 seconds; L2norm = 2.3555e-02; KLdistance = 3.0227e+00.
+Time-step 800/439945 reached. Elasped time:    53.8900 seconds; L2norm = 2.3082e-02; KLdistance = 2.9841e+00.
+Save pdf to compare at iteration 810
+Time-step 810/439945 reached. Elasped time:    55.8700 seconds; L2norm = 2.3037e-02; KLdistance = 2.9804e+00.
+Time-step 900/439945 reached. Elasped time:    58.1400 seconds; L2norm = 2.2650e-02; KLdistance = 2.9483e+00.
+Time-step 1000/439945 reached. Elasped time:    60.4300 seconds; L2norm = 2.2255e-02; KLdistance = 2.9149e+00.
+Save pdf to compare at iteration 1060
+Time-step 1060/439945 reached. Elasped time:    62.6900 seconds; L2norm = 2.2033e-02; KLdistance = 2.8959e+00.
+Time-step 1100/439945 reached. Elasped time:    65.0100 seconds; L2norm = 2.1890e-02; KLdistance = 2.8836e+00.
+Time-step 1200/439945 reached. Elasped time:    67.3600 seconds; L2norm = 2.1553e-02; KLdistance = 2.8542e+00.
+Time-step 1300/439945 reached. Elasped time:    69.7000 seconds; L2norm = 2.1238e-02; KLdistance = 2.8264e+00.
+Save pdf to compare at iteration 1385
+Time-step 1385/439945 reached. Elasped time:    72.0700 seconds; L2norm = 2.0987e-02; KLdistance = 2.8039e+00.
+Time-step 1400/439945 reached. Elasped time:    74.5500 seconds; L2norm = 2.0945e-02; KLdistance = 2.8000e+00.
+Time-step 1500/439945 reached. Elasped time:    77.0600 seconds; L2norm = 2.0669e-02; KLdistance = 2.7750e+00.
+Time-step 1600/439945 reached. Elasped time:    79.5700 seconds; L2norm = 2.0410e-02; KLdistance = 2.7512e+00.
+Time-step 1700/439945 reached. Elasped time:    82.2100 seconds; L2norm = 2.0165e-02; KLdistance = 2.7284e+00.
+Time-step 1800/439945 reached. Elasped time:    84.8100 seconds; L2norm = 1.9934e-02; KLdistance = 2.7067e+00.
+Save pdf to compare at iteration 1805
+Time-step 1805/439945 reached. Elasped time:    87.3600 seconds; L2norm = 1.9922e-02; KLdistance = 2.7056e+00.
+Time-step 1900/439945 reached. Elasped time:    90.0800 seconds; L2norm = 1.9714e-02; KLdistance = 2.6858e+00.
+Time-step 2000/439945 reached. Elasped time:    92.7800 seconds; L2norm = 1.9505e-02; KLdistance = 2.6658e+00.
+Time-step 2100/439945 reached. Elasped time:    95.5100 seconds; L2norm = 1.9307e-02; KLdistance = 2.6466e+00.
+Time-step 2200/439945 reached. Elasped time:    98.5300 seconds; L2norm = 1.9117e-02; KLdistance = 2.6280e+00.
+Time-step 2300/439945 reached. Elasped time:   101.4400 seconds; L2norm = 1.8936e-02; KLdistance = 2.6102e+00.
+Save pdf to compare at iteration 2345
+Time-step 2345/439945 reached. Elasped time:   104.2400 seconds; L2norm = 1.8857e-02; KLdistance = 2.6023e+00.
+Time-step 2400/439945 reached. Elasped time:   107.0600 seconds; L2norm = 1.8762e-02; KLdistance = 2.5929e+00.
+Time-step 2500/439945 reached. Elasped time:   109.9800 seconds; L2norm = 1.8596e-02; KLdistance = 2.5762e+00.
+Save pdf to compare at iteration 3045
+Time-step 3045/439945 reached. Elasped time:   113.7100 seconds; L2norm = 1.7794e-02; KLdistance = 2.4940e+00.
+Save pdf to compare at iteration 3945
+Time-step 3945/439945 reached. Elasped time:   118.3300 seconds; L2norm = 1.6752e-02; KLdistance = 2.3822e+00.
+Time-step 5000/439945 reached. Elasped time:   123.0400 seconds; L2norm = 1.5817e-02; KLdistance = 2.2767e+00.
+Save pdf to compare at iteration 5115
+Time-step 5115/439945 reached. Elasped time:   126.2000 seconds; L2norm = 1.5729e-02; KLdistance = 2.2665e+00.
+Save pdf to compare at iteration 6620
+Time-step 6620/439945 reached. Elasped time:   131.4500 seconds; L2norm = 1.4740e-02; KLdistance = 2.1486e+00.
+Time-step 7500/439945 reached. Elasped time:   135.9600 seconds; L2norm = 1.4273e-02; KLdistance = 2.0906e+00.
+Save pdf to compare at iteration 8565
+Time-step 8565/439945 reached. Elasped time:   140.7400 seconds; L2norm = 1.3785e-02; KLdistance = 2.0284e+00.
+Time-step 10000/439945 reached. Elasped time:   146.1300 seconds; L2norm = 1.3227e-02; KLdistance = 1.9552e+00.
+Save pdf to compare at iteration 11080
+Time-step 11080/439945 reached. Elasped time:   151.8800 seconds; L2norm = 1.2865e-02; KLdistance = 1.9064e+00.
+Time-step 12500/439945 reached. Elasped time:   157.4900 seconds; L2norm = 1.2446e-02; KLdistance = 1.8486e+00.
+Save pdf to compare at iteration 14325
+Time-step 14325/439945 reached. Elasped time:   163.8000 seconds; L2norm = 1.1982e-02; KLdistance = 1.7830e+00.
+Time-step 15000/439945 reached. Elasped time:   168.2000 seconds; L2norm = 1.1827e-02; KLdistance = 1.7607e+00.
+Time-step 17500/439945 reached. Elasped time:   175.5400 seconds; L2norm = 1.1317e-02; KLdistance = 1.6859e+00.
+Save pdf to compare at iteration 18515
+Time-step 18515/439945 reached. Elasped time:   180.6400 seconds; L2norm = 1.1134e-02; KLdistance = 1.6584e+00.
+Time-step 20000/439945 reached. Elasped time:   186.5500 seconds; L2norm = 1.0886e-02; KLdistance = 1.6207e+00.
+Time-step 22500/439945 reached. Elasped time:   194.2000 seconds; L2norm = 1.0512e-02; KLdistance = 1.5630e+00.
+Save pdf to compare at iteration 23925
+Time-step 23925/439945 reached. Elasped time:   200.1200 seconds; L2norm = 1.0320e-02; KLdistance = 1.5328e+00.
+Time-step 25000/439945 reached. Elasped time:   205.5900 seconds; L2norm = 1.0183e-02; KLdistance = 1.5111e+00.
+Time-step 27500/439945 reached. Elasped time:   212.8400 seconds; L2norm = 9.8901e-03; KLdistance = 1.4641e+00.
+Time-step 30000/439945 reached. Elasped time:   219.8400 seconds; L2norm = 9.6259e-03; KLdistance = 1.4210e+00.
+Save pdf to compare at iteration 30920
+Time-step 30920/439945 reached. Elasped time:   224.9200 seconds; L2norm = 9.5349e-03; KLdistance = 1.4060e+00.
+Time-step 32500/439945 reached. Elasped time:   230.8100 seconds; L2norm = 9.3855e-03; KLdistance = 1.3813e+00.
+Time-step 35000/439945 reached. Elasped time:   237.9400 seconds; L2norm = 9.1651e-03; KLdistance = 1.3444e+00.
+Time-step 37500/439945 reached. Elasped time:   245.2300 seconds; L2norm = 8.9616e-03; KLdistance = 1.3100e+00.
+Save pdf to compare at iteration 39945
+Time-step 39945/439945 reached. Elasped time:   252.3900 seconds; L2norm = 8.7767e-03; KLdistance = 1.2784e+00.
+Time-step 40000/439945 reached. Elasped time:   256.6300 seconds; L2norm = 8.7727e-03; KLdistance = 1.2777e+00.
+Time-step 42500/439945 reached. Elasped time:   263.9700 seconds; L2norm = 8.5963e-03; KLdistance = 1.2474e+00.
+Time-step 45000/439945 reached. Elasped time:   271.3000 seconds; L2norm = 8.4311e-03; KLdistance = 1.2187e+00.
+Time-step 47500/439945 reached. Elasped time:   278.7000 seconds; L2norm = 8.2755e-03; KLdistance = 1.1916e+00.
+Time-step 50000/439945 reached. Elasped time:   286.1600 seconds; L2norm = 8.1286e-03; KLdistance = 1.1658e+00.
+Save pdf to compare at iteration 51610
+Time-step 51610/439945 reached. Elasped time:   292.5200 seconds; L2norm = 8.0381e-03; KLdistance = 1.1498e+00.
+Time-step 52500/439945 reached. Elasped time:   298.0700 seconds; L2norm = 7.9893e-03; KLdistance = 1.1412e+00.
+Time-step 55000/439945 reached. Elasped time:   305.7200 seconds; L2norm = 7.8570e-03; KLdistance = 1.1178e+00.
+Time-step 57500/439945 reached. Elasped time:   313.4500 seconds; L2norm = 7.7308e-03; KLdistance = 1.0953e+00.
+Time-step 60000/439945 reached. Elasped time:   321.2200 seconds; L2norm = 7.6103e-03; KLdistance = 1.0738e+00.
+Time-step 62500/439945 reached. Elasped time:   329.2200 seconds; L2norm = 7.4950e-03; KLdistance = 1.0531e+00.
+Time-step 65000/439945 reached. Elasped time:   337.2400 seconds; L2norm = 7.3843e-03; KLdistance = 1.0333e+00.
+Save pdf to compare at iteration 66670
+Time-step 66670/439945 reached. Elasped time:   344.4600 seconds; L2norm = 7.3128e-03; KLdistance = 1.0204e+00.
+Time-step 67500/439945 reached. Elasped time:   350.3200 seconds; L2norm = 7.2779e-03; KLdistance = 1.0141e+00.
+Time-step 70000/439945 reached. Elasped time:   358.3800 seconds; L2norm = 7.1755e-03; KLdistance = 9.9568e-01.
+Time-step 72500/439945 reached. Elasped time:   366.3800 seconds; L2norm = 7.0768e-03; KLdistance = 9.7786e-01.
+Time-step 75000/439945 reached. Elasped time:   374.4700 seconds; L2norm = 6.9814e-03; KLdistance = 9.6063e-01.
+Time-step 77500/439945 reached. Elasped time:   382.6800 seconds; L2norm = 6.8891e-03; KLdistance = 9.4396e-01.
+Time-step 80000/439945 reached. Elasped time:   390.9100 seconds; L2norm = 6.7997e-03; KLdistance = 9.2781e-01.
+Time-step 82500/439945 reached. Elasped time:   399.1800 seconds; L2norm = 6.7131e-03; KLdistance = 9.1215e-01.
+Time-step 85000/439945 reached. Elasped time:   407.8300 seconds; L2norm = 6.6290e-03; KLdistance = 8.9696e-01.
+Save pdf to compare at iteration 86125
+Time-step 86125/439945 reached. Elasped time:   415.0400 seconds; L2norm = 6.5919e-03; KLdistance = 8.9026e-01.
+Time-step 87500/439945 reached. Elasped time:   422.1400 seconds; L2norm = 6.5473e-03; KLdistance = 8.8220e-01.
+Time-step 90000/439945 reached. Elasped time:   430.6800 seconds; L2norm = 6.4678e-03; KLdistance = 8.6785e-01.
+Time-step 92500/439945 reached. Elasped time:   439.3300 seconds; L2norm = 6.3904e-03; KLdistance = 8.5389e-01.
+Time-step 95000/439945 reached. Elasped time:   448.0100 seconds; L2norm = 6.3149e-03; KLdistance = 8.4030e-01.
+Time-step 97500/439945 reached. Elasped time:   456.6700 seconds; L2norm = 6.2414e-03; KLdistance = 8.2707e-01.
+Time-step 100000/439945 reached. Elasped time:   465.4600 seconds; L2norm = 6.1696e-03; KLdistance = 8.1417e-01.
+Time-step 102500/439945 reached. Elasped time:   474.3100 seconds; L2norm = 6.0994e-03; KLdistance = 8.0159e-01.
+Time-step 105000/439945 reached. Elasped time:   483.1400 seconds; L2norm = 6.0309e-03; KLdistance = 7.8932e-01.
+Time-step 107500/439945 reached. Elasped time:   491.9500 seconds; L2norm = 5.9638e-03; KLdistance = 7.7733e-01.
+Time-step 110000/439945 reached. Elasped time:   500.9400 seconds; L2norm = 5.8982e-03; KLdistance = 7.6563e-01.
+Save pdf to compare at iteration 111250
+Time-step 111250/439945 reached. Elasped time:   508.9700 seconds; L2norm = 5.8659e-03; KLdistance = 7.5988e-01.
+Time-step 112500/439945 reached. Elasped time:   516.5400 seconds; L2norm = 5.8339e-03; KLdistance = 7.5419e-01.
+Time-step 115000/439945 reached. Elasped time:   525.6900 seconds; L2norm = 5.7709e-03; KLdistance = 7.4301e-01.
+Time-step 117500/439945 reached. Elasped time:   534.9100 seconds; L2norm = 5.7092e-03; KLdistance = 7.3207e-01.
+Time-step 120000/439945 reached. Elasped time:   544.2300 seconds; L2norm = 5.6486e-03; KLdistance = 7.2138e-01.
+Time-step 122500/439945 reached. Elasped time:   553.6100 seconds; L2norm = 5.5892e-03; KLdistance = 7.1090e-01.
+Time-step 125000/439945 reached. Elasped time:   563.0000 seconds; L2norm = 5.5308e-03; KLdistance = 7.0065e-01.
+Time-step 127500/439945 reached. Elasped time:   572.4300 seconds; L2norm = 5.4734e-03; KLdistance = 6.9060e-01.
+Time-step 130000/439945 reached. Elasped time:   582.1600 seconds; L2norm = 5.4171e-03; KLdistance = 6.8076e-01.
+Time-step 132500/439945 reached. Elasped time:   591.9500 seconds; L2norm = 5.3617e-03; KLdistance = 6.7111e-01.
+Time-step 135000/439945 reached. Elasped time:   601.6700 seconds; L2norm = 5.3072e-03; KLdistance = 6.6166e-01.
+Time-step 137500/439945 reached. Elasped time:   611.5400 seconds; L2norm = 5.2536e-03; KLdistance = 6.5238e-01.
+Time-step 140000/439945 reached. Elasped time:   621.4100 seconds; L2norm = 5.2008e-03; KLdistance = 6.4328e-01.
+Time-step 142500/439945 reached. Elasped time:   631.5300 seconds; L2norm = 5.1489e-03; KLdistance = 6.3435e-01.
+Save pdf to compare at iteration 143700
+Time-step 143700/439945 reached. Elasped time:   640.3400 seconds; L2norm = 5.1242e-03; KLdistance = 6.3012e-01.
+Time-step 145000/439945 reached. Elasped time:   648.9500 seconds; L2norm = 5.0977e-03; KLdistance = 6.2559e-01.
+Time-step 147500/439945 reached. Elasped time:   658.9600 seconds; L2norm = 5.0473e-03; KLdistance = 6.1698e-01.
+Time-step 150000/439945 reached. Elasped time:   669.1900 seconds; L2norm = 4.9976e-03; KLdistance = 6.0853e-01.
+Time-step 152500/439945 reached. Elasped time:   679.1200 seconds; L2norm = 4.9486e-03; KLdistance = 6.0023e-01.
+Time-step 155000/439945 reached. Elasped time:   689.3700 seconds; L2norm = 4.9004e-03; KLdistance = 5.9208e-01.
+Time-step 157500/439945 reached. Elasped time:   699.5200 seconds; L2norm = 4.8527e-03; KLdistance = 5.8407e-01.
+Time-step 160000/439945 reached. Elasped time:   709.9100 seconds; L2norm = 4.8057e-03; KLdistance = 5.7619e-01.
+Time-step 162500/439945 reached. Elasped time:   720.3000 seconds; L2norm = 4.7593e-03; KLdistance = 5.6845e-01.
+Time-step 165000/439945 reached. Elasped time:   730.7900 seconds; L2norm = 4.7136e-03; KLdistance = 5.6084e-01.
+Time-step 167500/439945 reached. Elasped time:   741.2100 seconds; L2norm = 4.6684e-03; KLdistance = 5.5336e-01.
+Time-step 170000/439945 reached. Elasped time:   751.8600 seconds; L2norm = 4.6237e-03; KLdistance = 5.4599e-01.
+Time-step 172500/439945 reached. Elasped time:   762.4900 seconds; L2norm = 4.5797e-03; KLdistance = 5.3875e-01.
+Time-step 175000/439945 reached. Elasped time:   773.2100 seconds; L2norm = 4.5361e-03; KLdistance = 5.3162e-01.
+Time-step 177500/439945 reached. Elasped time:   783.8600 seconds; L2norm = 4.4931e-03; KLdistance = 5.2461e-01.
+Time-step 180000/439945 reached. Elasped time:   794.7600 seconds; L2norm = 4.4505e-03; KLdistance = 5.1771e-01.
+Time-step 182500/439945 reached. Elasped time:   805.5400 seconds; L2norm = 4.4085e-03; KLdistance = 5.1092e-01.
+Time-step 185000/439945 reached. Elasped time:   816.6000 seconds; L2norm = 4.3669e-03; KLdistance = 5.0423e-01.
+Save pdf to compare at iteration 185610
+Time-step 185610/439945 reached. Elasped time:   825.2500 seconds; L2norm = 4.3568e-03; KLdistance = 5.0261e-01.
+Time-step 187500/439945 reached. Elasped time:   835.5900 seconds; L2norm = 4.3258e-03; KLdistance = 4.9764e-01.
+Time-step 190000/439945 reached. Elasped time:   846.6400 seconds; L2norm = 4.2851e-03; KLdistance = 4.9116e-01.
+Time-step 192500/439945 reached. Elasped time:   857.9100 seconds; L2norm = 4.2449e-03; KLdistance = 4.8477e-01.
+Time-step 195000/439945 reached. Elasped time:   869.0700 seconds; L2norm = 4.2051e-03; KLdistance = 4.7848e-01.
+Time-step 197500/439945 reached. Elasped time:   880.3100 seconds; L2norm = 4.1657e-03; KLdistance = 4.7229e-01.
+Time-step 200000/439945 reached. Elasped time:   891.7600 seconds; L2norm = 4.1267e-03; KLdistance = 4.6618e-01.
+Time-step 202500/439945 reached. Elasped time:   903.1000 seconds; L2norm = 4.0882e-03; KLdistance = 4.6017e-01.
+Time-step 205000/439945 reached. Elasped time:   914.5500 seconds; L2norm = 4.0500e-03; KLdistance = 4.5424e-01.
+Time-step 207500/439945 reached. Elasped time:   926.0600 seconds; L2norm = 4.0122e-03; KLdistance = 4.4840e-01.
+Time-step 210000/439945 reached. Elasped time:   937.6300 seconds; L2norm = 3.9747e-03; KLdistance = 4.4264e-01.
+Time-step 212500/439945 reached. Elasped time:   949.2600 seconds; L2norm = 3.9377e-03; KLdistance = 4.3696e-01.
+Time-step 215000/439945 reached. Elasped time:   960.8900 seconds; L2norm = 3.9009e-03; KLdistance = 4.3137e-01.
+Time-step 217500/439945 reached. Elasped time:   972.7300 seconds; L2norm = 3.8645e-03; KLdistance = 4.2585e-01.
+Time-step 220000/439945 reached. Elasped time:   984.4500 seconds; L2norm = 3.8285e-03; KLdistance = 4.2041e-01.
+Time-step 222500/439945 reached. Elasped time:   996.4000 seconds; L2norm = 3.7928e-03; KLdistance = 4.1505e-01.
+Time-step 225000/439945 reached. Elasped time:  1008.3400 seconds; L2norm = 3.7574e-03; KLdistance = 4.0976e-01.
+Time-step 227500/439945 reached. Elasped time:  1020.3300 seconds; L2norm = 3.7223e-03; KLdistance = 4.0455e-01.
+Time-step 230000/439945 reached. Elasped time:  1032.3100 seconds; L2norm = 3.6876e-03; KLdistance = 3.9940e-01.
+Time-step 232500/439945 reached. Elasped time:  1044.5100 seconds; L2norm = 3.6531e-03; KLdistance = 3.9433e-01.
+Time-step 235000/439945 reached. Elasped time:  1056.6200 seconds; L2norm = 3.6190e-03; KLdistance = 3.8933e-01.
+Time-step 237500/439945 reached. Elasped time:  1068.9500 seconds; L2norm = 3.5851e-03; KLdistance = 3.8439e-01.
+Save pdf to compare at iteration 239740
+Time-step 239740/439945 reached. Elasped time:  1080.8500 seconds; L2norm = 3.5550e-03; KLdistance = 3.8002e-01.
+Time-step 240000/439945 reached. Elasped time:  1090.4800 seconds; L2norm = 3.5515e-03; KLdistance = 3.7952e-01.
+Time-step 242500/439945 reached. Elasped time:  1103.0200 seconds; L2norm = 3.5182e-03; KLdistance = 3.7471e-01.
+Time-step 245000/439945 reached. Elasped time:  1115.5500 seconds; L2norm = 3.4852e-03; KLdistance = 3.6997e-01.
+Time-step 247500/439945 reached. Elasped time:  1128.0200 seconds; L2norm = 3.4525e-03; KLdistance = 3.6530e-01.
+Time-step 250000/439945 reached. Elasped time:  1140.5900 seconds; L2norm = 3.4200e-03; KLdistance = 3.6068e-01.
+Time-step 252500/439945 reached. Elasped time:  1153.1100 seconds; L2norm = 3.3878e-03; KLdistance = 3.5613e-01.
+Time-step 255000/439945 reached. Elasped time:  1165.8600 seconds; L2norm = 3.3558e-03; KLdistance = 3.5163e-01.
+Time-step 257500/439945 reached. Elasped time:  1178.5600 seconds; L2norm = 3.3241e-03; KLdistance = 3.4720e-01.
+Time-step 260000/439945 reached. Elasped time:  1191.5300 seconds; L2norm = 3.2926e-03; KLdistance = 3.4282e-01.
+Time-step 262500/439945 reached. Elasped time:  1204.3700 seconds; L2norm = 3.2614e-03; KLdistance = 3.3850e-01.
+Time-step 265000/439945 reached. Elasped time:  1217.3700 seconds; L2norm = 3.2304e-03; KLdistance = 3.3423e-01.
+Time-step 267500/439945 reached. Elasped time:  1230.2400 seconds; L2norm = 3.1997e-03; KLdistance = 3.3002e-01.
+Time-step 270000/439945 reached. Elasped time:  1243.3800 seconds; L2norm = 3.1692e-03; KLdistance = 3.2587e-01.
+Time-step 272500/439945 reached. Elasped time:  1256.3400 seconds; L2norm = 3.1389e-03; KLdistance = 3.2177e-01.
+Time-step 275000/439945 reached. Elasped time:  1269.5700 seconds; L2norm = 3.1088e-03; KLdistance = 3.1772e-01.
+Time-step 277500/439945 reached. Elasped time:  1282.7300 seconds; L2norm = 3.0790e-03; KLdistance = 3.1372e-01.
+Time-step 280000/439945 reached. Elasped time:  1296.1300 seconds; L2norm = 3.0494e-03; KLdistance = 3.0978e-01.
+Time-step 282500/439945 reached. Elasped time:  1309.4400 seconds; L2norm = 3.0199e-03; KLdistance = 3.0588e-01.
+Time-step 285000/439945 reached. Elasped time:  1322.8900 seconds; L2norm = 2.9907e-03; KLdistance = 3.0204e-01.
+Time-step 287500/439945 reached. Elasped time:  1336.3100 seconds; L2norm = 2.9617e-03; KLdistance = 2.9824e-01.
+Time-step 290000/439945 reached. Elasped time:  1349.9200 seconds; L2norm = 2.9329e-03; KLdistance = 2.9449e-01.
+Time-step 292500/439945 reached. Elasped time:  1363.4500 seconds; L2norm = 2.9044e-03; KLdistance = 2.9079e-01.
+Time-step 295000/439945 reached. Elasped time:  1377.1100 seconds; L2norm = 2.8760e-03; KLdistance = 2.8714e-01.
+Time-step 297500/439945 reached. Elasped time:  1390.7000 seconds; L2norm = 2.8478e-03; KLdistance = 2.8353e-01.
+Time-step 300000/439945 reached. Elasped time:  1404.4800 seconds; L2norm = 2.8197e-03; KLdistance = 2.7997e-01.
+Time-step 302500/439945 reached. Elasped time:  1418.1900 seconds; L2norm = 2.7919e-03; KLdistance = 2.7646e-01.
+Time-step 305000/439945 reached. Elasped time:  1431.9900 seconds; L2norm = 2.7643e-03; KLdistance = 2.7299e-01.
+Time-step 307500/439945 reached. Elasped time:  1445.8200 seconds; L2norm = 2.7368e-03; KLdistance = 2.6956e-01.
+Save pdf to compare at iteration 309655
+Time-step 309655/439945 reached. Elasped time:  1459.4400 seconds; L2norm = 2.7133e-03; KLdistance = 2.6664e-01.
+Time-step 310000/439945 reached. Elasped time:  1470.4500 seconds; L2norm = 2.7096e-03; KLdistance = 2.6617e-01.
+Time-step 312500/439945 reached. Elasped time:  1484.4000 seconds; L2norm = 2.6825e-03; KLdistance = 2.6283e-01.
+Time-step 315000/439945 reached. Elasped time:  1498.3400 seconds; L2norm = 2.6556e-03; KLdistance = 2.5953e-01.
+Time-step 317500/439945 reached. Elasped time:  1512.4300 seconds; L2norm = 2.6289e-03; KLdistance = 2.5627e-01.
+Time-step 320000/439945 reached. Elasped time:  1527.1000 seconds; L2norm = 2.6023e-03; KLdistance = 2.5306e-01.
+Time-step 322500/439945 reached. Elasped time:  1542.0500 seconds; L2norm = 2.5759e-03; KLdistance = 2.4988e-01.
+Time-step 325000/439945 reached. Elasped time:  1558.6500 seconds; L2norm = 2.5497e-03; KLdistance = 2.4674e-01.
+Time-step 327500/439945 reached. Elasped time:  1572.8100 seconds; L2norm = 2.5236e-03; KLdistance = 2.4365e-01.
+Time-step 330000/439945 reached. Elasped time:  1587.2000 seconds; L2norm = 2.4977e-03; KLdistance = 2.4059e-01.
+Time-step 332500/439945 reached. Elasped time:  1601.5800 seconds; L2norm = 2.4720e-03; KLdistance = 2.3757e-01.
+Time-step 335000/439945 reached. Elasped time:  1616.0200 seconds; L2norm = 2.4464e-03; KLdistance = 2.3459e-01.
+Time-step 337500/439945 reached. Elasped time:  1630.4400 seconds; L2norm = 2.4210e-03; KLdistance = 2.3165e-01.
+Time-step 340000/439945 reached. Elasped time:  1645.0100 seconds; L2norm = 2.3957e-03; KLdistance = 2.2875e-01.
+Time-step 342500/439945 reached. Elasped time:  1659.5200 seconds; L2norm = 2.3706e-03; KLdistance = 2.2588e-01.
+Time-step 345000/439945 reached. Elasped time:  1674.1800 seconds; L2norm = 2.3457e-03; KLdistance = 2.2305e-01.
+Time-step 347500/439945 reached. Elasped time:  1688.7300 seconds; L2norm = 2.3209e-03; KLdistance = 2.2025e-01.
+Time-step 350000/439945 reached. Elasped time:  1703.5000 seconds; L2norm = 2.2962e-03; KLdistance = 2.1749e-01.
+Time-step 352500/439945 reached. Elasped time:  1718.0600 seconds; L2norm = 2.2717e-03; KLdistance = 2.1477e-01.
+Time-step 355000/439945 reached. Elasped time:  1732.9300 seconds; L2norm = 2.2474e-03; KLdistance = 2.1208e-01.
+Time-step 357500/439945 reached. Elasped time:  1747.6400 seconds; L2norm = 2.2231e-03; KLdistance = 2.0943e-01.
+Time-step 360000/439945 reached. Elasped time:  1762.6600 seconds; L2norm = 2.1991e-03; KLdistance = 2.0681e-01.
+Time-step 362500/439945 reached. Elasped time:  1777.5700 seconds; L2norm = 2.1751e-03; KLdistance = 2.0422e-01.
+Time-step 365000/439945 reached. Elasped time:  1792.7700 seconds; L2norm = 2.1514e-03; KLdistance = 2.0167e-01.
+Time-step 367500/439945 reached. Elasped time:  1808.1100 seconds; L2norm = 2.1277e-03; KLdistance = 1.9915e-01.
+Time-step 370000/439945 reached. Elasped time:  1823.3600 seconds; L2norm = 2.1042e-03; KLdistance = 1.9667e-01.
+Time-step 372500/439945 reached. Elasped time:  1838.5900 seconds; L2norm = 2.0808e-03; KLdistance = 1.9421e-01.
+Time-step 375000/439945 reached. Elasped time:  1853.8900 seconds; L2norm = 2.0576e-03; KLdistance = 1.9179e-01.
+Time-step 377500/439945 reached. Elasped time:  1869.3800 seconds; L2norm = 2.0345e-03; KLdistance = 1.8940e-01.
+Time-step 380000/439945 reached. Elasped time:  1884.7400 seconds; L2norm = 2.0115e-03; KLdistance = 1.8704e-01.
+Time-step 382500/439945 reached. Elasped time:  1900.3200 seconds; L2norm = 1.9886e-03; KLdistance = 1.8472e-01.
+Time-step 385000/439945 reached. Elasped time:  1915.8600 seconds; L2norm = 1.9659e-03; KLdistance = 1.8242e-01.
+Time-step 387500/439945 reached. Elasped time:  1931.5300 seconds; L2norm = 1.9433e-03; KLdistance = 1.8016e-01.
+Time-step 390000/439945 reached. Elasped time:  1947.2500 seconds; L2norm = 1.9209e-03; KLdistance = 1.7793e-01.
+Time-step 392500/439945 reached. Elasped time:  1962.9300 seconds; L2norm = 1.8986e-03; KLdistance = 1.7572e-01.
+Time-step 395000/439945 reached. Elasped time:  1978.6800 seconds; L2norm = 1.8763e-03; KLdistance = 1.7355e-01.
+Time-step 397500/439945 reached. Elasped time:  1994.4100 seconds; L2norm = 1.8543e-03; KLdistance = 1.7140e-01.
+Save pdf to compare at iteration 399945
+Time-step 399945/439945 reached. Elasped time:  2010.2600 seconds; L2norm = 1.8328e-03; KLdistance = 1.6934e-01.
+Time-step 400000/439945 reached. Elasped time:  2022.9900 seconds; L2norm = 1.8323e-03; KLdistance = 1.6929e-01.
+Time-step 402500/439945 reached. Elasped time:  2039.0700 seconds; L2norm = 1.8105e-03; KLdistance = 1.6720e-01.
+Time-step 405000/439945 reached. Elasped time:  2054.9800 seconds; L2norm = 1.7888e-03; KLdistance = 1.6515e-01.
+Time-step 407500/439945 reached. Elasped time:  2071.1000 seconds; L2norm = 1.7672e-03; KLdistance = 1.6312e-01.
+Time-step 410000/439945 reached. Elasped time:  2087.1600 seconds; L2norm = 1.7457e-03; KLdistance = 1.6112e-01.
+Time-step 412500/439945 reached. Elasped time:  2103.4500 seconds; L2norm = 1.7244e-03; KLdistance = 1.5915e-01.
+Time-step 415000/439945 reached. Elasped time:  2119.6600 seconds; L2norm = 1.7031e-03; KLdistance = 1.5721e-01.
+Time-step 417500/439945 reached. Elasped time:  2136.0100 seconds; L2norm = 1.6820e-03; KLdistance = 1.5529e-01.
+Time-step 420000/439945 reached. Elasped time:  2152.3800 seconds; L2norm = 1.6610e-03; KLdistance = 1.5340e-01.
+Time-step 422500/439945 reached. Elasped time:  2168.8700 seconds; L2norm = 1.6401e-03; KLdistance = 1.5154e-01.
+Time-step 425000/439945 reached. Elasped time:  2185.2600 seconds; L2norm = 1.6194e-03; KLdistance = 1.4971e-01.
+Time-step 427500/439945 reached. Elasped time:  2201.9100 seconds; L2norm = 1.5987e-03; KLdistance = 1.4790e-01.
+Time-step 430000/439945 reached. Elasped time:  2218.3300 seconds; L2norm = 1.5782e-03; KLdistance = 1.4612e-01.
+Time-step 432500/439945 reached. Elasped time:  2235.0200 seconds; L2norm = 1.5578e-03; KLdistance = 1.4436e-01.
+Time-step 435000/439945 reached. Elasped time:  2251.6200 seconds; L2norm = 1.5375e-03; KLdistance = 1.4264e-01.
+Time-step 437500/439945 reached. Elasped time:  2268.3400 seconds; L2norm = 1.5173e-03; KLdistance = 1.4094e-01.
+Kullback-Leibler distance between pFinal and pSimFinal: 0.34063905
+L2norm distance between pFinal and pSimFinal: 0.00149765
+statisticalDistance = 56.92835038

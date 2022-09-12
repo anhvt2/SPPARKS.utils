@@ -1,0 +1,180 @@
+SPK INPUT SCRIPT:
+# SPPARKS Potts tests on generic lattice
+# a simple two-component, two- phase system.
+# Parameters as in Homer, Tikare, Holm, Comp.Mat.Sci (2013)
+# 2D lattice, similar to section 3.3.2
+
+# seed 		56789
+include in.seed.spk
+
+# lambda sometimes called gamma
+# a1 = a2 = a
+# Nspins PFsteps lambda M_C KappaC a c1 c2 c3 c4
+# set Nspins as a variable
+
+# parameters settings (edit by AT)
+variable	Nspins equal 200 # previously: 200
+variable	boxSize equal 1000
+variable 	PFsteps equal 10
+variable	runTime equal 20000
+
+
+# simulation
+app_style	potts/pfm ${Nspins} ${PFsteps} 0.3 1 1 0.5 0.25 0.75 0.05 0.95 &
+			reset_phasefield no &
+			print_connectivity yes &
+			initialize_values yes &
+			enforce_concentration_limits no
+
+dimension 	2
+lattice 	sq/8n 1.0
+region 		box block 0 ${boxSize} 0 ${boxSize} -0.5 0.5
+
+create_box 	box
+create_sites 	box
+
+# assign random spins to sites
+set 		site range 1 ${Nspins} #  edit by AT
+
+# assign phase 0 or 1 to i2, based on spin
+
+# set variable (edit by AT)
+variable	thres1 equal "v_Nspins/2 + 1"
+print		"Set variables successful! "
+
+set 		i2 value 1
+set 		i2 value 0 if i1 < ${thres1}  # 101 -> 1001
+
+# assign initial concentration to d1, based on phase
+
+set 		d1 value 1.0
+set 		d1 value 0 if i2 = 0
+
+sweep 		random
+sector 		yes
+
+# if yes, skip Monte Carlo solve or sweep
+#app_update_only 	yes #no
+
+# enforces concentration boundary conditions: C(xlo) = 0, C(xhi) = 1.0
+#pottspfm_reset_phasefield yes #no
+
+# show the neighborlist indices used for finite difference stencil
+#pottspfm_print_connectivity yes #no
+
+# initializes at equilibrium concentrations of phases dE/dC = 0
+#pottspfm_initialize_values yes #no 
+
+# constrain site concentrations to the physical range 
+# if C(x) < 0.0, C(x) = 0.0
+# if C(x) > 1.0, C(x) = 1.0
+#pottspfm_enforce_concentration_limits yes #no
+
+diag_style 	energy
+diag_style 	array i2 mean d1 sum d1 min d1 max
+temperature 	0.3
+
+# all output generated at uniform intervals of log(t)
+
+stats 		1.0 logfreq 9 10.0
+dump 			1 text 1.0 dump.*.out id site i2 d1 energy
+dump_modify 	1 logfreq 9 10.0
+
+# graphics output
+# if no JPEG support, remove these commands
+
+dump			2 image 1.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify 	2 logfreq 9 10.0
+
+dump			3 image 1.0 phase.*.jpg i2 site shape cube sdiam 1.0 crange -1 2 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify 	3 logfreq 9 10.0
+
+dump			4 image 1.0 conc.*.jpg d1 site shape cube sdiam 1.0 crange 0.0 1.0 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify 	4 logfreq 9 10.0
+
+# cluster analysis based on spins
+
+diag_style 		cluster delt 1.0 stats no logfreq 9 10.0 filename cluster.dat
+
+
+# short run
+run 			${runTime}
+
+
+
+SPPARKS (24 June 2021)
+Created box = (0 0 -0.5) to (1000 1000 0.5)
+  1 by 1 by 1 processor grid
+Creating sites ...
+  1000000 sites
+  1000000 sites have 8 neighbors
+Setting site values ...
+  1000000 settings made for site
+Set variables successful! 
+Setting site values ...
+  1000000 settings made for i2
+Setting site values ...
+  499348 settings made for i2
+Setting site values ...
+  1000000 settings made for d1
+Setting site values ...
+  499348 settings made for d1
+Connectivity map for app_style: potts/pfm
+  +/-     x     y
+    -     1     3
+    +     6     4
+
+Setting up run ...
+Running with 32-bit site IDs
+Memory usage per processor = 77.5 Mbytes
+      Time    Naccept    Nreject    Nsweeps        CPU     Energy   mean(i2)    sum(d1)    min(d1)    max(d1)
+         0          0          0          0          0 8.13648e+06   0.499348     499733   0.295455   0.704545
+         1    2825081    5174919          8       7.23 3.38889e+06   0.498817     499733   0.190102   0.848179
+     1.375    3225822    7774178         11       10.9 2.96705e+06   0.499438     499733   0.160566   0.857602
+      1.75    3561401   10438599         14       14.4 2.70375e+06   0.499151     499733   0.156412   0.847797
+      2.25    3950945   14049055         18       18.4 2.46312e+06    0.49919     499733   0.127424   0.842751
+     2.875    4380754   18619246         23       22.9 2.2507e+06   0.498102     499733   0.139393    0.85376
+     3.625    4843425   24156575         29       27.9 2.06428e+06    0.49756     499733   0.138907   0.883805
+      4.75    5461519   32538481         38       34.6 1.86562e+06   0.497461     499733   0.127404   0.890492
+         6    6079097   41920903         48       41.7 1.7071e+06   0.497467     499733  0.0710688   0.895085
+      7.75    6857325   55142675         62       50.8 1.5478e+06   0.498018     499733   0.104661   0.903217
+        10    7750240   72249760         80       61.9 1.40225e+06   0.497667     499733   0.083968   0.942499
+        13    8819676   95180324        104       75.9 1.26691e+06   0.496892     499733   0.102229   0.928213
+     16.75   10011486  123988514        134       92.9 1.15055e+06   0.498152     499733  0.0708933   0.953449
+Warning: Concentration has deviated outside [0,1] range
+    21.625   11397600  161602400        173        114 1.04506e+06   0.499332     499733  0.0752506    0.89767
+    27.875   12988060  210011940        223        140     952460   0.499807     499733  0.0771029   0.953618
+        36   14857595  273142405        288        174     870002   0.499474     499733  0.0804352   0.947524
+      46.5   17034764  354965236        372        216     795270   0.498456     499733   0.093056   0.960914
+        60   19562086  460437914        480        269     731844   0.497968     499733  0.0860425   0.948104
+      77.5   22533293  597466707        620        338     674106   0.497699     499733   0.109061   0.926409
+       100   26016986  773983014        800        424     621850   0.498522     499733  0.0095547   0.898181
+    129.25   30126955 1003873045       1034        536     575365    0.50051     499733  0.0554226   0.922356
+   166.875   34916287 1300083713       1335        678     532184   0.498711     499733  0.0527034   0.896537
+     215.5   40613832 1683386168       1724        861     495969    0.49825     499733  0.0928732    0.86274
+   278.375   47384443 2179615557       2227    1.1e+03     463743    0.49791     499733  0.0895671   0.859383
+     359.5   55368395 2820631605       2876    1.4e+03     433064   0.499564     499733  0.0920609   0.830035
+    464.25   64769403 3649230597       3714   1.79e+03     404224   0.499624     499733   0.164091   0.841336
+     599.5   75799688 4720200312       4796   2.28e+03     376062   0.499215     499733   0.172903   0.966993
+   774.375   88809299 6106190701       6195   2.93e+03     352005   0.497161     499733   0.155812   0.843392
+      1000  104166950 7895833050       8000   3.75e+03     329826   0.500466     499733   0.141377   0.888714
+   1291.62  122418589 10210581411      10333   4.82e+03     313408   0.502458     499733  0.0979413   0.868835
+   1668.12  144558371 13200441629      13345   6.19e+03     296630   0.499649     499733   0.138353   0.810057
+    2154.5  171175256 17064824744      17236   7.96e+03     282101    0.50034     499733   0.186185   0.804829
+   2782.62  202745724 22058254276      22261   1.02e+04     268229   0.499677     499733    0.17452   0.789704
+   3593.88  240874576 28510125424      28751   1.32e+04     253791   0.497917     499733    0.18421   0.875409
+   4641.62  286990599 36846009401      37133    1.7e+04     241345   0.494484     499733   0.197271   0.822966
+   5994.88  341994345 47617005655      47959   2.19e+04     225886   0.496341     499733   0.206405   0.783398
+   7742.75  408116937 61533883063      61942   2.82e+04     215329   0.496998     499733   0.222159   0.773789
+     10000  487676412 79512323588      80000   3.63e+04     206788   0.499731     499733   0.190026   0.771946
+   12915.5  580950720 102743049280     103324   4.68e+04     197374   0.499191     499733   0.211644   0.771986
+   16681.1  691285503 132757714497     133449   6.03e+04     190501   0.496243     499733   0.234209    0.78042
+     20000  781733292 159218266708     160000   7.22e+04     184931   0.495996     499733   0.220854   0.768002
+Loop time of 72224.2 on 1 procs
+
+Solve time (%) = 72157 (99.907)
+Update time (%) = 0 (0)
+Comm  time (%) = 0.719902 (0.000996759)
+Outpt time (%) = 66.3612 (0.0918822)
+App   time (%) = 0 (0)
+Other time (%) = 0.0969474 (0.000134231)

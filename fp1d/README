@@ -1,0 +1,21 @@
+the package has been developed before but refine at 8Mar18 for further research
+
+before 8Mar18, the back up files are in repo_8Mar18
+derivative matrix is calculated from 
+`
+H. Hassan, A. Mohamad, G. Atteia, An algorithm for the finite difference 
+approximation of derivatives with arbitrary degree and order of accuracy,
+Journal of Computational and Applied Mathematics 236 (10) (2012) 2622–2631.
+`
+
+
+# research log
+# note: expand bounds adaptively if convergence to to the boundary
+
+9Mar18: tried 4 params -> OK performance
+11Mar18: tried 6 params -> better calib, but worse afterward
+12Mar18: constant diffusion (0th order), high order drift (3th order drift) -> result: heavy tail
+13Mar18: tried 2 params, constant diffusion, constant drift -> against the theoretical results
+
+
+

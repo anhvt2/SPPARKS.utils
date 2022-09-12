@@ -1,0 +1,15 @@
+source from Epistemic+Aleatory uncertainty
+
+# source
+/media/anhvt89/ExtHD3TB/dataAcquisitionEpistemic/decomposeData/outputs
+
+# target
+/home/anhvt89/Documents/uncertaintyPropagation/longEquil_SparseGrid/fokkerPlanckModel/fp1d/probabilityRepo
+
+
+rm -v MSDtotal # overlap with test
+lower case for all folders
+
+
+
+
