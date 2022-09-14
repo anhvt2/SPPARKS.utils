@@ -64,7 +64,7 @@ for i in range(len(iterationList)):
 	# initPlt, 			= plt.plot(x, pInit, 'ro:', linewidth=2, label='first training pdf (kMC: 46.5 mcs)')
 	# calibratedPlt, 	= plt.plot(x, pCalibrated, 'mo-.', linewidth=2, label='last training pdf (kMC: 599.5 mcs)')
 	# finalPlt, 		= plt.plot(x, pFinal, 'go--', linewidth=2, label='last testing pdf (kMC: 16,681.1 mcs)')
-	currentPlt, 	= plt.plot(x, pCurrent, c='red', linestyle='--', linewidth=4, label='evolving Fokker-Planck pdf')
+	currentPlt, 	= plt.plot(x, pCurrent, c='red', linestyle='--', linewidth=4, label='Fokker-Planck pdf')
 	spkCurrentPlt,  = plt.plot(x, pSpkCurrent, c='blue', linestyle='-', linewidth=4, label='SPPARKS pdf')
 
 
