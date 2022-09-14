@@ -74,7 +74,7 @@ for i in range(len(iterationList)-1, 0, -1): # flip from the end to the beginnin
 	plt.ylim([0, 1.5 * np.max(pCurrent)])
 	plt.title('Fokker-Planck density at iteration %d/%d (time-step %.4f)' % (iteration_number, M, startTime + iteration_number * dt), fontsize=24) 
 	plt.xlabel(r'grain area (pixel$^2$)', fontsize=18)
-	plt.ylabel('probability density function.', fontsize=18)
+	plt.ylabel('probability density function', fontsize=18)
 
 
 
@@ -141,7 +141,7 @@ for i in range(len(iterationList)-1, 0, -1): # flip from the end to the beginnin
 	# plt.title("Extrapolation in time comparison between Fokker-Planck and SPPARKS: $t=%.4f$" % (np.exp(startTime + iteration_number * dt)), fontsize=24) # exponential in time for kinetic Monte Carlo -- time calculated using FPE
 	plt.title("Extrapolation in time comparison between Fokker-Planck and SPPARKS: $t=%.4f$" % (spkTimeList[spkIndex]), fontsize=24) # time referenced using SPPARKS
 	plt.xlabel(r'grain area (pixel$^2$)', fontsize=18)
-	plt.ylabel('probability density function.', fontsize=18)
+	plt.ylabel('probability density function', fontsize=18)
 
 	### add sample images from SPPARKS simulations
 	# https://towardsdatascience.com/how-to-add-an-image-to-a-matplotlib-plot-in-python-76098becaf53
