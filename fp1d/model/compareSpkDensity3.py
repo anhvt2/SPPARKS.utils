@@ -33,13 +33,15 @@ spkTimeList = [0, 1, 1.375, 1.75, 2.25, 2.875, 3.625, 4.75, 6, 7.75, 10, 13, 16.
 print(iterationList)
 
 # for ii in iterationList:
-# for i in range(len(iterationList)):
-for i in range(len(iterationList)-1, 0, -1): # flip from the end to the beginning to get more images in shorter time (due to KDE)
+for i in range(len(iterationList)):
+# for i in range(len(iterationList)-1, -1, -1): # flip from the end to the beginning to get more images in shorter time (due to KDE)
 	ii = iterationList[i]
 	startTimePython = datetime.datetime.now()
 
 	iteration_number = ii # (5, 5122, 11762) # input parameter: change this
 	spkIndex = i + 16 # reference i to log.spparks -- 16 SPPARKS iterations has been used for training
+	# note: training starts at 46.5 mcs to 599.5 mcs
+	# testing starts at 599.5 mcs to 16681.1 mcs
 	pCurrent = np.loadtxt('pCurrent.%d.dat' % iteration_number) 
 
 	x = np.loadtxt('x.dat')
