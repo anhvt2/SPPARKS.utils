@@ -1,0 +1,41 @@
+# SPPARKS Potts tests on generic lattice
+
+seed         56789
+
+app_style    potts/pin 100
+
+variable    boxSize equal 1000
+
+# dimension       3
+# lattice        sc/26n 1.0
+# region         box block 0 20 0 20 0 20
+
+dimension 2
+lattice         sq/8n 1.0
+region          box block 0 ${boxSize} 0 ${boxSize} -0.5 0.5
+create_box      box
+
+create_sites    box
+set             site range 1 100
+
+sweep           random
+# sweep       raster mask yes
+# solve_style      tree
+sector       yes
+
+#solve_style      tree
+#solve_style      group 26 1
+#sector      yes
+
+diag_style       energy
+
+temperature  0.0
+
+stats            10.0
+dump             1 text 10.0 dump.potts
+diag_style       cluster delt 1.0 stats no logfreq 9 10.0 filename cluster.dat
+
+dump            2 image 1.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify     2 logfreq 9 10.0
+
+run              10000.0
