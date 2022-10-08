@@ -1,51 +1,105 @@
 SPPARKS (7 June 2022)
-# SPPARKS Potts tests on generic lattice
+#
+# SEED: 
+variable SEED equal                 1
+#
+# T: simulation temperature
+variable T equal                 0.0625
+#
+# DT: number of KMC steps
+variable DT equal 400.0
+#
+# IN_FILLER: stitch input filename
+variable IN_FILLER world vf03_nvox100.st
 
-seed         56789
+# OUT_FILLER: output filename
+variable OUT_FILLER world pin_filler.st
 
-app_style    potts/pin 90
+#
+seed		 ${SEED}
+seed		 1
 
-variable    boxSize equal 1000
 
-# dimension       3
-# lattice        sc/26n 1.0
-# region         box block 0 20 0 20 0 20
+# Declare app
+app_style diffusion/multiphase
 
-dimension 2
-lattice         sq/8n 1.0
-region          box block 0 ${boxSize} 0 ${boxSize} -0.5 0.5
-region          box block 0 1000 0 ${boxSize} -0.5 0.5
-region          box block 0 1000 0 1000 -0.5 0.5
-create_box      box
-Created box = (0 0 -0.5) to (1000 1000 0.5)
-  4 by 4 by 1 processor grid
+# 
+dimension	 3
 
-create_sites    box
+# 
+boundary p p p
+
+# 
+lattice		 sc/26n 1.0
+region		 box block 0 100 0 100 0 100
+create_box	 box
+Created box = (0 0 0) to (100 100 100)
+  2 by 2 by 4 processor grid
+create_sites     box
 Creating sites ...
   1000000 sites
-  1000000 sites have 8 neighbors
-set             site range 1 100
-  1000000 settings made for site
+  1000000 sites have 26 neighbors
 
-sweep           random
-# sweep       raster mask yes
-# solve_style      tree
-sector       yes
+# Define phase labels '1' '2' and '3'
+# Must always be after 'create_sites'
+# Define and pin phase '1'
+diffusion/multiphase pin 1
+# Define phases '2' and '3'
+diffusion/multiphase phase 2
+diffusion/multiphase phase 3
 
-#solve_style      tree
-#solve_style      group 26 1
-#sector      yes
+# Initialize filler from stitch file;
+# In this case -- the filler phase label is '1' with 
+#    all remaining sites set to a phase value '0';
+# Fact that non-filler values are '0' is leveraged below;
+# Read 'stitch' file using 'first' time step in file
+# Sets the variable 'i1' in app diffusion/multiphase
+set i1 stitch ${IN_FILLER} first
+set i1 stitch vf03_nvox100.st first
+  1000000 settings made for i1
 
+# NOTE: this command is sensitive to 'phase' values 
+#    specified above; Idea here is to evenly distribute
+#    phase labels '2 and 3' to sites that have a value 
+#    of '0' from above 'set i1 stitch' command; all 
+#    values < 1 are assumed to be non-filler
+set i1 range 2 3 if i1 < 1
+  1000000 settings made for i1
+
+solve_style tree
+sector yes
 diag_style       energy
-
-temperature  0.0
-
+temperature	 ${T}
+temperature	 0.0625
 stats            10.0
-dump             1 text 10.0 dump.potts
-diag_style       cluster delt 1.0 stats no logfreq 9 10.0 filename cluster.dat
 
-dump            2 image 1.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
-dump_modify     2 logfreq 9 10.0
+# Dump stitch file and images at time intervals of 100
+dump         dump.id stitch 100 ${OUT_FILLER} i1
+dump         dump.id stitch 100 pin_filler.st i1
+dump threedee image 100 pin_filler.*.jpg site site crange 1 3 drange 1 1 shape cube box no 1 zoom 1.3 size 512 512 sdiam 1.05
+dump_modify threedee scolor * red/white/black backcolor gray
 
-run              2500.0
-ERROR: One or more sites have invalid values (../app_potts_pin.cpp:80)
+run             ${DT}
+run             400
+Setting up run ...
+Running with 64-bit site IDs
+Memory usage per processor = 13.5 Mbytes
+      Time    Naccept    Nreject    Nsweeps        CPU     Energy
+         0          0          0          0          0 6.49785e+06
+   10.1982    1468759          0          6       19.8 2.8938e+06
+   38.7658    1826561          0          8       24.3 2.75795e+06
+   64.8874    1991640          0          9       26.5 2.73995e+06
+   118.844    2276671          0         10       30.4 2.72765e+06
+   175.294    2568862          0         11         34 2.71496e+06
+    251.05    2948152          0         12       39.2 2.70233e+06
+   327.275    3333500          0         13       44.2 2.68974e+06
+   395.796    3678392          0         14       48.3 2.67971e+06
+       400    3700740          0         15       49.3 2.67805e+06
+Loop time of 49.2555 on 16 procs
+
+Solve time (%) = 0.0686443 (0.139364)
+Update time (%) = 0 (0)
+Comm  time (%) = 11.8371 (24.0319)
+Outpt time (%) = 2.35528 (4.78175)
+App   time (%) = 34.9435 (70.9433)
+Other time (%) = 0.0510527 (0.103649)
