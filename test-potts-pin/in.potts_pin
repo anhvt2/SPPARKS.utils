@@ -2,7 +2,7 @@
 
 seed         56789
 
-app_style    potts/pin 90
+app_style    potts/pin 100
 
 variable    boxSize equal 1000
 
@@ -17,6 +17,7 @@ create_box      box
 
 create_sites    box
 set             site range 1 100
+pin             0.1 0 0
 
 sweep           random
 # sweep       raster mask yes
