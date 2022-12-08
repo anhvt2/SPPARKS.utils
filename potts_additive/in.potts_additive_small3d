@@ -66,9 +66,9 @@ stats            1.0
 #dump             1 text 25.0 dump.additive4.* id i1 d1
 
 dump 1 stitch 2 small3d.23Jul2020.linux site
-dump 2 text 25.0 dump.additive_small3d.* id i1 d1
-dump vtkFile vtk 1.0 vtk.additive_small3d.* i1
-dump_modify vtkFile vtk 100 100 100 0 10000
+dump 2 text 25.0 dump.additive_small3d.* id i1 d1 x y z
+dump vtkFile vtk 1.0 additive_small3d.*.vti i1
+dump_modify vtkFile vtk 100 100 100 0 10000 sort id
 
 #If SPPARKS was not compiled with libjpeg, comment out the lines below.
 dump top image 2 top.small3D.*.jpg site site crange 1 1000 drange 1 1 view 0.0 0.0 shape cube box no 1 zoom 2 size 512 512 sdiam 1.05
