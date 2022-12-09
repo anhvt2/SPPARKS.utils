@@ -29,11 +29,13 @@ mpirun -np 16 spk < in.potts_additive_small3d
 			* `Edit Column Mapping`: `i1` as `Particle Type`
 			* `x`, `y`, `z` should automatically load
 			* add `Assign color` filter: operate on `Particles`
+			![how to import to OVITO](ovito_selection.png)
 		* on the `Rendering`:
 			* animate
 			* choose a view point by clicking on one of four views
 			* `Save to file` with file name `test_` or `perspective_small3d_` at a designated location
 			* click `Render active viewport`
 			* save animation
+			![OVITO perspective animation of SPPARKS/potts_additive/small3d](perspective_small3d.gif)
 
 5. A helpful discussion: [here](https://www.ovito.org/forum/topic/coloring-particles-based-on-their-unique-id/)
