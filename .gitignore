@@ -2,3 +2,4 @@ libjpeg/jpeg-9e/
 dump.*
 *.linux
 *.linux.*
+*.o
