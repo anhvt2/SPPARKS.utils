@@ -1,0 +1,109 @@
+SPPARKS (7 June 2022)
+# SPPARKS Potts tests on generic lattice
+
+seed         56789
+
+app_style    potts/pin 100
+
+variable    boxSize equal 1000
+
+# dimension       3
+# lattice        sc/26n 1.0
+# region         box block 0 20 0 20 0 20
+
+dimension 2
+lattice         sq/8n 1.0
+region          box block 0 ${boxSize} 0 ${boxSize} -0.5 0.5
+region          box block 0 1000 0 ${boxSize} -0.5 0.5
+region          box block 0 1000 0 1000 -0.5 0.5
+create_box      box
+Created box = (0 0 -0.5) to (1000 1000 0.5)
+  4 by 4 by 1 processor grid
+
+create_sites    box
+Creating sites ...
+  1000000 sites
+  1000000 sites have 8 neighbors
+set             site range 1 100
+  1000000 settings made for site
+# https://spparks.github.io/doc/pin.html
+# pin fraction multiflag nthresh 
+#    fraction = fraction of sites (0 to 1) to convert to pinned sites
+#    multiflag = 0 for single sites, 1 for sites+neighbors
+#    nthresh = # of neighbor sites which must have different spins 
+pin             0.01 0 0   
+
+sweep           random
+# sweep       raster mask yes
+# solve_style      tree
+sector       yes
+
+#solve_style      tree
+#solve_style      group 26 1
+#sector      yes
+diag_style       energy
+
+temperature  0.0
+
+# stats            10.0
+# dump             1 text 10.0 dump.*.potts
+# diag_style       cluster delt 1.0 stats no logfreq 9 10.0 filename cluster.dat
+
+stats       	 1.0 logfreq 9 10.0
+dump             1 text 1.0 dump.*.potts # id site i2 d1 energy
+dump_modify      1 logfreq 9 10.0
+
+dump             2 image 10.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify      2 logfreq 9 10.0
+
+run              10000.0
+Setting up run ...
+Running with 64-bit site IDs
+Memory usage per processor = 4.5 Mbytes
+      Time    Naccept    Nreject    Nsweeps        CPU     Energy
+         0          0          0          0          0 7.92036e+06
+         1   15557606   84442394        100       2.33 4.52047e+06
+       1.3   16709061  113290939        130       3.98 4.1394e+06
+      1.67   17698566  149301434        167       5.74 3.79857e+06
+      2.16   18565458  197434542        216       7.66 3.48316e+06
+      2.79   19294289  259705711        279        9.7 3.20788e+06
+       3.6   19933674  340066326        360       11.8 2.9649e+06
+      4.65   20513831  444486169        465       14.1 2.74667e+06
+         6   21060512  578939488        600       16.7 2.5468e+06
+      7.75   21590733  753409267        775       19.7 2.36017e+06
+     10.01   22106155  978893845       1001         23 2.18817e+06
+     12.92   22630403 1269369597       1292       26.9 2.02664e+06
+     16.69   23176493 1645823507       1669       31.3 1.87166e+06
+     21.55   23732201 2131267799       2155       36.6 1.72757e+06
+     27.83   24319234 2758680766       2783       43.1 1.59057e+06
+     35.94   24941337 3569058663       3594         51 1.46098e+06
+     46.42   25594618 4616405382       4642       60.6 1.34564e+06
+     59.95   26301142 5968698858       5995       72.1 1.23862e+06
+     77.43   27062873 7715937127       7743       86.4 1.14423e+06
+       100   27884717 9972115283      10000        104 1.06077e+06
+    129.16   28783062 12887216938      12916        127     985880
+    166.82   29765518 16652234482      16682        155     921996
+    215.45   30839182 21514160818      21545        189     871116
+    278.26   32018882 27793981118      27826        234     833050
+    359.39   33357351 35905642649      35939        292     799706
+    464.16   34883506 46381116494      46416        364     775320
+    599.49   36665866 59912334134      59949        458     758946
+    774.27   38831743 77388168257      77427        577     748708
+   1000.01   41498904 99959501096     100001        731     742462
+   1291.55   44837946 129110162054     129155        930     739120
+   1668.11   49078433 166761921567     166811   1.18e+03     735984
+   2154.44   54483777 215389516223     215444   1.51e+03     734758
+   2782.56   61419012 278194580988     278256   1.93e+03     733354
+   3593.82   70341484 359311658516     359382   2.48e+03     733116
+   4641.59   81850171 464077149829     464159   3.19e+03     733116
+   5994.85   96705897 599388294103     599485    4.1e+03     733062
+   7742.64  115891670 774148108330     774264   5.27e+03     733062
+     10000  140662203 999859337797    1000000   6.79e+03     733062
+Loop time of 6786.96 on 16 procs
+
+Solve time (%) = 6001.18 (88.4223)
+Update time (%) = 0 (0)
+Comm  time (%) = 732.698 (10.7957)
+Outpt time (%) = 52.6688 (0.77603)
+App   time (%) = 0 (0)
+Other time (%) = 0.407529 (0.00600459)
