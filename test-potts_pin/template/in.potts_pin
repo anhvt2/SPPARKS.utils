@@ -22,7 +22,7 @@ set             site range 1 100
 #    fraction = fraction of sites (0 to 1) to convert to pinned sites
 #    multiflag = 0 for single sites, 1 for sites+neighbors
 #    nthresh = # of neighbor sites which must have different spins 
-pin             0.01 0 0   
+include in.pin
 
 sweep           random
 # sweep       raster mask yes
