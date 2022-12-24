@@ -1,6 +1,6 @@
 # SPPARKS Potts tests on generic lattice
 
-seed         56789
+include in.seed
 
 app_style    potts/pin 100
 
@@ -34,7 +34,7 @@ sector       yes
 #sector      yes
 diag_style       energy
 
-temperature  0.0
+include in.temperature
 
 # stats            10.0
 # dump             1 text 10.0 dump.*.potts
