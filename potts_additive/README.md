@@ -30,6 +30,7 @@ mpirun -np 16 spk < in.potts_additive_small3d
 			* `x`, `y`, `z` should automatically load
 			* add `Assign color` filter: operate on `Particles`
 			![how to import to OVITO](ovito_selection.png)
+			* may have to unselect `Assign color`
 		* on the `Rendering`:
 			* animate
 			* choose a view point by clicking on one of four views
