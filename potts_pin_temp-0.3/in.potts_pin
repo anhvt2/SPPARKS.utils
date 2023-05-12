@@ -44,7 +44,7 @@ stats       	 1.0 logfreq 9 10.0
 dump             1 text 1.0 dump.*.potts # id site i2 d1 energy
 dump_modify      1 logfreq 9 10.0
 
-dump             2 image 10.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump             2 image 1.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
 dump_modify      2 logfreq 9 10.0
 
 run              20000.0
