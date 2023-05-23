@@ -1,0 +1,148 @@
+SPPARKS (7 June 2022)
+# SPPARKS Potts tests on generic lattice
+# a simple two-component, two- phase system.
+# Parameters as in Homer, Tikare, Holm, Comp.Mat.Sci (2013)
+# 2D lattice, similar to section 3.3.2
+
+seed 		56789
+
+# lambda sometimes called gamma
+# a1 = a2 = a
+# Nspins PFsteps lambda M_C KappaC a c1 c2 c3 c4
+app_style	potts/pfm 200 10 0.3 1 1 0.5 0.25 0.75 0.05 0.95 			reset_phasefield no 			print_connectivity yes 			initialize_values yes 			enforce_concentration_limits no
+
+# dimension 	2
+# lattice 	sq/8n 1.0
+# region 		box block 0 100 0 100 -0.5 0.5
+
+dimension	 3
+lattice	 	 sc/26n 1.0
+region		 box block 0 100 0 100 0 100
+
+boundary 	 n n n
+
+create_box 	box
+Created box = (0 0 0) to (100 100 100)
+  1 by 2 by 2 processor grid
+create_sites 	box
+Creating sites ...
+  1000000 sites
+  8 sites have 7 neighbors
+  0 sites have 8 neighbors
+  0 sites have 9 neighbors
+  0 sites have 10 neighbors
+  1176 sites have 11 neighbors
+  0 sites have 12 neighbors
+  0 sites have 13 neighbors
+  0 sites have 14 neighbors
+  0 sites have 15 neighbors
+  0 sites have 16 neighbors
+  57624 sites have 17 neighbors
+  0 sites have 18 neighbors
+  0 sites have 19 neighbors
+  0 sites have 20 neighbors
+  0 sites have 21 neighbors
+  0 sites have 22 neighbors
+  0 sites have 23 neighbors
+  0 sites have 24 neighbors
+  0 sites have 25 neighbors
+  941192 sites have 26 neighbors
+
+# assign random spins to sites
+
+set 		site range 1 200
+  1000000 settings made for site
+
+# assign phase 0 or 1 to i2, based on spin
+
+set 		i2 value 1
+  1000000 settings made for i2
+set 		i2 value 0 if i1 < 101
+  500924 settings made for i2
+
+# assign initial concentration to d1, based on phase
+
+set 		d1 value 1.0
+  1000000 settings made for d1
+set 		d1 value 0 if i2 = 0
+  500924 settings made for d1
+
+sweep 		random
+sector 		yes
+
+# if yes, skip Monte Carlo solve or sweep
+#app_update_only 	yes #no
+
+# enforces concentration boundary conditions: C(xlo) = 0, C(xhi) = 1.0
+#pottspfm_reset_phasefield yes #no
+
+# show the neighborlist indices used for finite difference stencil
+#pottspfm_print_connectivity yes #no
+
+# initializes at equilibrium concentrations of phases dE/dC = 0
+#pottspfm_initialize_values yes #no 
+
+# constrain site concentrations to the physical range 
+# if C(x) < 0.0, C(x) = 0.0
+# if C(x) > 1.0, C(x) = 1.0
+#pottspfm_enforce_concentration_limits yes #no
+
+diag_style 	energy
+diag_style 	array i2 mean d1 sum d1 min d1 max
+temperature 	0.3
+
+# all output generated at uniform intervals of log(t)
+
+stats 		1.0 logfreq 9 10.0
+dump 		1 text 1.0 dump.*.out id site i2 d1 energy
+dump_modify 	1 logfreq 9 10.0
+
+# graphics output
+# if no JPEG support, remove these commands
+
+dump		2 image 1.0 grain.*.jpg i1 site shape cube sdiam 1.0 crange 0 201 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify 	2 logfreq 9 10.0
+
+dump		3 image 1.0 phase.*.jpg i2 site shape cube sdiam 1.0 crange -1 2 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify 	3 logfreq 9 10.0
+
+dump		4 image 1.0 conc.*.jpg d1 site shape cube sdiam 1.0 crange 0.0 1.0 box no 0 view 0 0 zoom 2.02 center s 0.49 0.49 0.5
+dump_modify 	4 logfreq 9 10.0
+
+# cluster analysis based on spins
+
+diag_style 	cluster delt 1.0 stats no logfreq 9 10.0 filename cluster.dat
+
+# short run
+
+run 		10.0
+Connectivity map for app_style: potts/pfm
+  +/-     x     y     z
+    -     4    10    12
+    +    21    15    13
+
+Setting up run ...
+Running with 64-bit site IDs
+Memory usage per processor = 43.875 Mbytes
+      Time    Naccept    Nreject    Nsweeps        CPU     Energy   mean(i2)    sum(d1)    min(d1)    max(d1)
+         0          0          0          0          0 2.55542e+07   0.500924     500378   0.295455   0.704545
+   1.03846    4567614   22432386         27       8.67 1.11287e+07   0.502542     504638   0.183468   0.817061
+   1.30769    4841223   29158777         34       12.6 1.00815e+07   0.503038     503719   0.181135   0.825149
+   1.69231    5153616   38846384         44       16.9 9.02877e+06   0.502164     501710   0.140951   0.861471
+   2.19231    5489754   51510246         57       21.9 8.02874e+06   0.501008     499083   0.147838   0.877632
+   2.80769    5832836   67167164         73       27.5 7.13477e+06   0.500983     497120   0.102998   0.882401
+   3.61538    6204097   87795903         94       33.8 6.32843e+06   0.499853     495216   0.105215   0.915983
+   4.65385    6606385  114393615        121       41.1 5.60493e+06   0.498114     492241   0.037401   0.937068
+Warning: Concentration has deviated outside [0,1] range
+         6    7048246  148951754        156       49.6 4.94957e+06   0.497375     489307  0.0870481    1.02878
+   7.76923    7547220  194452780        202         60 4.35012e+06   0.499309     491085 0.00287818    1.00726
+   10.0385    8092876  252907124        261       72.5 3.82294e+06   0.501214     493062  0.0561791   0.991014
+Loop time of 72.5338 on 4 procs
+
+Solve time (%) = 45.8186 (63.1687)
+Update time (%) = 0 (0)
+Comm  time (%) = 3.31524 (4.57061)
+Outpt time (%) = 23.3996 (32.2603)
+App   time (%) = 0 (0)
+Other time (%) = 0.000291158 (0.00040141)
+
