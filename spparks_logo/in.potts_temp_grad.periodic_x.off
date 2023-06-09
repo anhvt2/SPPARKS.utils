@@ -2,8 +2,8 @@
 # Causes the perodicity to be turned off in the x direction
 
 seed         	 56789
-variable         Nx     equal  192
-variable         Ny     equal  1039
+variable         Nx     equal  200
+variable         Ny     equal  1100
 variable         Nz     equal  50
 variable         Nspin  equal  1000000
 
@@ -11,7 +11,6 @@ variable         Nspin  equal  1000000
 app_style        potts/grad temp ${Nspin}   0.0006   1.0  1.0 375.0  1.5    0.0    0.0
 
 dimension        3
-
 lattice          sc/26n 1.0
 region           box block 0 ${Nx} 0 ${Ny} 0 ${Nz}
 create_box       box
