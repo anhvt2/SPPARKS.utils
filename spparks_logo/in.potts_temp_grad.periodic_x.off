@@ -1,19 +1,19 @@
 # SPPARKS Potts Gradient test on cubic lattice
 # Causes the perodicity to be turned off in the x direction
 
-seed		 56789
+seed         56789
 
 
 # app_style      style grad_style nspins    m0  convert Q   T0   grad_x grad_y grad_z 
-app_style        potts/grad temp 25000   0.0006   1.0  1.0 375.0  1.5    0.0    0.0
+app_style        potts/grad temp 1000000   0.0006   1.0  1.0 375.0  1.5    0.0    0.0
 
-dimension	 3
+dimension        3
 
-lattice		 sc/26n 1.0
-region		 box block 0 50 0 20 0 20 
-create_box	 box
+lattice          sc/26n 1.0
+region           box block 0 192 0 1039 0 50 
+create_box       box
 create_sites     box
-set              site range 1 25000
+set              site range 1 1000000
 # Pins sites on left edge
 # Simply replace the x with y or z to turn off periodicity in the y or z direction
 # 1) assign spin=0
@@ -22,17 +22,17 @@ set              site range 1 25000
 set i1 value 0 if x < 1
 set d2 value -1.0 if x < 1
 
-sweep		 color 
-sector		 yes
+sweep        color 
+sector       yes
 
 diag_style       energy
 
-temperature	 1.0
+temperature  1.0
 
 stats            5.0
 dump             1 text 5.0 temp_grad.periodic_x.off.dump
-dump 		 grain_growth_image image 1 grain_growth.*.jpg site site crange 1 25000 drange 1 1 view 85 65 shape cube box no 1 zoom 1.75 size 550 550
-dump_modify 	 grain_growth_image backcolor white pad 4 
+# dump           grain_growth_image image 1 grain_growth.*.jpg site site crange 1 25000 drange 1 1 view 85 65 shape cube box no 1 zoom 1.75 size 550 550
+# dump_modify    grain_growth_image backcolor white pad 4 
 diag_style       cluster delt 5.0 stats no logfreq 9 10.0 filename temp_grad.periodic_x.off.cluster
 
 run              25.0
