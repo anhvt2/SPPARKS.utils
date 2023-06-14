@@ -10,3 +10,4 @@ for i in range(d.shape[0]):
 
 io.imshow(d)
 plt.show()
+np.save('spparks_phase.npy', d)
