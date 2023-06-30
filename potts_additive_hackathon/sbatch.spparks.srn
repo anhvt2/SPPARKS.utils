@@ -21,5 +21,5 @@ cores=36                             # Number MPI processes to run on each node 
 # mpiexec --bind-to core --npernode $cores --n $(($cores*$nodes)) /path/to/executable [--args...]
 
 
-mpiexec --bind-to core --npernode $cores --n $(($cores*$nodes)) spk < in.potts_additive_small3d.spk
+mpiexec --bind-to core --npernode $cores --n $(($cores*$nodes)) spk < in.potts_3d
 
