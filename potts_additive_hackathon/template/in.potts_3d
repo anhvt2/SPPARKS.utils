@@ -2,7 +2,7 @@
 
 seed         56789
 
-app_style    potts 100
+app_style    potts 10000
 
 dimension    3
 lattice      sc/26n 1.0
