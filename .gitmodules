@@ -2,5 +2,5 @@
     path = spparks
     url = https://github.com/spparks/spparks
 [submodule "cie-hackthon-spparks-desgin"]
-    path = cie-hackthon-spparks-desgin
-    url = git@github.com:anhvt2/cie-hackthon-spparks-desgin.git
+	path = cie-hackthon-spparks-desgin
+	url = git@github.com:anhvt2/cie-hackthon-spparks-desgin.git
