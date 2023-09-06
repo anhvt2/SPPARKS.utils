@@ -1,6 +1,3 @@
 [submodule "spparks"]
 	path = spparks
 	url = https://github.com/spparks/spparks
-[submodule "spparks-hackathon"]
-	path = spparks-hackathon
-	url = https://github.com/anhvt2/spparks-hackathon
