@@ -1,0 +1,62 @@
+# SPPARKS potts/additive test file
+
+seed		 2341
+
+		 
+app_style	 potts/additive		100000 50 120 30 7		55 130 32 10 0.1
+
+#  |————————————————————————————————————————
+#  | nspins		= atoi(arg[1])
+#  |————————————————————————————————————————
+#  | nspins = atoi(arg[1]); #Number of spins
+#  | spot_width = atoi(arg[2]); #Width of the melt pool
+#  | melt_tail_length = atoi(arg[3]); #Length of tail from meltpool midpoint
+#  | melt_depth = atoi(arg[4]); #How many lattice sites deep the melt pool is
+#  | cap_height = atoi(arg[5]); #Height of the cap leading the meltpool
+#  |————————————————————————————————————————
+#  | HAZ = atoi(arg[6]); #Size of the HAZ surrounding the melt pool (must be larger than spot_width)
+#  | tail_HAZ = atoi(arg[7]); #Length of hot zone behind meltpool (must be larger than melt_tail_length)
+#  | depth_HAZ = atof(arg[8]); //Depth of the hot zone underneath the meltpool (must be larger than melt_depth)
+#  | cap_HAZ = atoi(arg[8]); #Size of HAZ infront of the melt pool (must be larger than cap_height)
+#  | exp_factor = atof(arg[9]); #Exponential parameter for mobility decay in haz M(d) = exp(-exp_factor * d)
+#  |————————————————————————————————————————
+
+#Define simulation domain and initialize site variables
+#———————————————————————————————————————————
+dimension	 3
+lattice	 	 sc/26n 1.0
+region		 box block 0 100 0 100 0 100
+
+boundary 	 n n n
+processors 5 3 1
+
+create_box	 box
+create_sites	 box
+set		 i1 range 1 100000 
+set		 d1 value 0.0
+
+#———————————————————————————————————————————
+
+#Define an additive scan pattern using a combination of pass, transverse_pass, cartesian_layer, and pattern
+#———————————————————————————————————————————
+am_pass 1 dir Y distance 100.0 speed 17
+am_transverse_pass 1 distance 100.0 increment 50
+am_cartesian_layer 1 start_position 100 0 pass_id 1 transverse_pass_id 1 serpentine 1
+am_pattern 1 num_layers 1 layer_ids 1 z_start 25 z_increment 13
+#———————————————————————————————————————————
+
+#Setup the solver type and parameters. Must use a "sweep" style solver
+#——————————————————————————————————————————— 
+sector		 yes
+sweep		 random mask yes
+temperature	 0.66
+#——————————————————————————————————————————— 
+
+#Specify output commands and styles.
+#——————————————————————————————————————————— 
+diag_style   energy
+stats            1.0
+dump             1 text 200.0 dump.additive4.* id i1 d1 x y z
+
+
+run              200
