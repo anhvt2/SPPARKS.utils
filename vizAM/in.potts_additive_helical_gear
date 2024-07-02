@@ -2,8 +2,6 @@
 
 seed         56789
 
-395, 395, 180
-
 variable     res    equal   1    # resolution: 1 pixel = ${res} um
 variable     L      equal   180  # dogbone specimen length (um) - z-direction
 variable     W      equal   395  # dogbone specimen width (um) - x-direction
@@ -126,7 +124,7 @@ stats           1.0
 
 
 # dump 1 stitch 2 additiveDogbone.23Jul2020.linux site # RE-ENABLE for production run
-dump 2 text 1.0 dump.additive_dogbone.*    id i1 d1 x y z # RE-ENABLE for production run
+# dump 2 text 1.0 dump.additive_dogbone.*    id i1 d1 x y z # RE-ENABLE for production run
 dump vtkFile vtk 1.0 additive_dogbone.*.vti i1 # dump vtkFile vtk 1.0 additive_dogbone.*.vti i1
 dump_modify vtkFile vtk ${Nx} ${Ny} ${Nz} 0 ${NxNyNz} sort id # dump_modify vtkFile vtk 100 100 100 0 10000 sort id
 
@@ -143,5 +141,5 @@ dump longitudinal image 2 longitudinal.additive_dogbone.*.jpg site site crange 1
 
 #——————————————————————————————————————————— 
 
-run             50
-# run              5000000
+# run             50
+run              5000000
