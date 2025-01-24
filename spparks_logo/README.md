@@ -3,6 +3,13 @@
 
 The purpose of this repository is to create a SPPARKS microstructure that makes up SPPARKS in words, while retaining different grain size at different locations.
 
+# Workflow
+
+```shell
+python3 img2phase.py
+python3 maskSpkVti.py
+```
+
 # Input
 
 Adopted from `examples/potts_grad/in.potts_temp_grad.periodic_x.off`. 

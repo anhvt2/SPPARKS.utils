@@ -1,5 +1,6 @@
 
 import skimage.io as io
+import matplotlib.pyplot as plt
 import numpy as np
 d = io.imread('cropped.spparks.png', as_gray=True) # d.shape = (192, 1039)
 
