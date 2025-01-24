@@ -4,3 +4,9 @@
 [submodule "cie-hackthon-spparks-desgin"]
 	path = cie-hackthon-spparks-design
 	url = git@github.com:anhvt2/cie-hackthon-spparks-desgin.git
+[submodule "diffusion-models/guided-diffusion"]
+	path = diffusion-models/guided-diffusion
+	url = https://github.com/openai/guided-diffusion
+[submodule "diffusion-models/RePaint"]
+	path = diffusion-models/RePaint
+	url = https://github.com/andreas128/RePaint
